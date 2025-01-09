@@ -18,8 +18,23 @@ function startWhit(array, letter) {
     return arrayWHitLetter
 }
 
+//arrow function 
+let arrowStartWhit = (array, letter) =>{
+    let arrayWHitLetter = []
+    for (let i = 0; i < array.length; i++) {
+        let name = array[i];
+        let firstLetter = name[0]
+        if (firstLetter === letter) {
+            arrayWHitLetter.push(name)
+        }
+    }
+
+    return arrayWHitLetter
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 console.log(startWhit(names, "A"));
+console.log(arrowStartWhit(names, "A"));
 
 
 
