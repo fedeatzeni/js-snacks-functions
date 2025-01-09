@@ -9,9 +9,28 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function hello(nameInput) {
+    let hi
+    let date = new Date();
+    let hour = date.getHours();
+
+    if (hour < 13) {
+        hi="buongiorno "
+    }
+    else if (hour < 17) {
+        hi="pomeriggio "
+    }
+    else {
+        hi="buonasera "
+    }
+
+    return (hi + nameInput)
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(hello(name));
+
 
 
 
