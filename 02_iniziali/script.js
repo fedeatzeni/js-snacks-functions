@@ -4,8 +4,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function firstLetters (array) {
+function firstLetters (array, letter) {
     let arrLetters = []
+    // per ogni elemento della lista prende la prima lettera e la mette in un'altra lista
     for (let i = 0; i < array.length; i++) {
         let letter= array[i]
         letter = letter[0]
